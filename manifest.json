@@ -5,7 +5,7 @@
 	"description": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
 	"authors": ["Jojje"],
 	"frameworkVersion": "2.33.21",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"contentFolders": ["1_content"],
 	"options": [
 		{
@@ -161,28 +161,28 @@
 			"localisationOverrides": {
 				"009F430D046716BE": {
 					"english": {
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"719544698": "After Dark"
+						"719544698": "After Dark",
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
 					},
 					"french": {
-						"1519259638": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère.",
-						"719544698": "Fin de Soirée"
+						"719544698": "Fin de Soirée",
+						"1519259638": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère."
 					},
 					"italian": {
-						"1519259638": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato.",
-						"719544698": "Abito Disinibito"
+						"719544698": "Abito Disinibito",
+						"1519259638": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato."
 					},
 					"german": {
-						"1519259638": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt.",
-						"719544698": "Einbruch der Dunkelheit"
+						"719544698": "Einbruch der Dunkelheit",
+						"1519259638": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt."
 					},
 					"spanish": {
-						"1519259638": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto.",
-						"719544698": "Cierrabares"
+						"719544698": "Cierrabares",
+						"1519259638": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto."
 					},
 					"russian": {
-						"1519259638": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать.",
-						"719544698": "Послемрак"
+						"719544698": "Послемрак",
+						"1519259638": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать."
 					}
 				}
 			}

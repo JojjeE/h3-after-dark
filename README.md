@@ -6,4 +6,4 @@ How you might look when coming home after a night at the casino, and you just ne
 
 ---
 
-`Jojje.AfterDark` v1.0.0, by Jojje. This README was automatically generated from the mod's manifest.
+`Jojje.AfterDark` v1.1.0, by Jojje. This README was automatically generated from the mod's manifest.
