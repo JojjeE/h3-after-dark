@@ -1,0 +1,51 @@
+{
+	"tempHash": "00C4CAC7C163EF10",
+	"tbluHash": "003C96F02511C053",
+	"patch": [
+		{ "SubEntityOperation": ["76ee97e63b3eb15a", { "SetName": "Agent47_Gloves_Driving" }] },
+		{ "SubEntityOperation": ["76ee97e63b3eb15a", { "SetFactory": "008897FB54E3DB82" }] },
+		{ "SubEntityOperation": ["76ee97e63b3eb15a", { "SetBlueprint": "00F716010CB776C3" }] },
+		{
+			"SubEntityOperation": [
+				"76ee97e63b3eb15a",
+				{ "AddProperty": ["Diffuse_Color_01_Value", { "type": "SColorRGB", "value": "#5e5e5e" }] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"76ee97e63b3eb15a",
+				{
+					"AddProperty": [
+						"Texture2D_03",
+						{
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_gloves.texture?/specular_b.tex](ascolormap).pc_tex",
+								"flag": "5F"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"76ee97e63b3eb15a",
+				{ "AddProperty": ["ConstantVector1D_05_Value", { "type": "float32", "value": 0.2800000011920929 }] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"76ee97e63b3eb15a",
+				{ "AddProperty": ["ConstantVector1D_04_Value", { "type": "float32", "value": 0.09000000357627869 }] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"76ee97e63b3eb15a",
+				{ "AddProperty": ["ConstantVector1D_01_Value", { "type": "float32", "value": 13.84000015258789 }] }
+			]
+		}
+	],
+	"patchVersion": 6
+}
