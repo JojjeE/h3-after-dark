@@ -1,0 +1,14 @@
+{
+	"7a3f0fcc-fbe7-418d-8ba7-6eda333705a6": {
+		"ID_": "7a3f0fcc-fbe7-418d-8ba7-6eda333705a6",
+		"CommonName": "CHAR_Global_Hero_After_Dark_M",
+		"Description": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC",
+		"HeroDisguiseAvailable": true,
+		"Image": "images/unlockables_override/47_Outfits_after_dark.jpg",
+		"IsHitmanSuit": true,
+		"Name": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME",
+		"Category": "",
+		"ImageTransparent": "",
+		"TokenID": "TOKEN_OUTFIT_HERO_AFTER_DARK"
+	}
+}

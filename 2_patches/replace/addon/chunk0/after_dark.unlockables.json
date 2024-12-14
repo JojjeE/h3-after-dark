@@ -1,0 +1,25 @@
+{
+	"TOKEN_OUTFIT_HERO_AFTER_DARK": {
+		"Id": "TOKEN_OUTFIT_HERO_AFTER_DARK",
+		"Guid": "57431910-6036-4a00-b3a7-0e8fbf930d0b",
+		"Type": "disguise",
+		"Subtype": "formal",
+		"ImageId": "",
+		"RMTPrice": -1,
+		"GamePrice": -1,
+		"IsPurchasable": false,
+		"IsPublished": true,
+		"IsDroppable": false,
+		"Capabilities": [],
+		"Qualities": {},
+		"Properties": {
+			"Quality": 2,
+			"Rarity": "common",
+			"LoadoutSlot": "disguise",
+			"IsConsumable": false,
+			"RepositoryId": "7a3f0fcc-fbe7-418d-8ba7-6eda333705a6",
+			"OrderIndex": 21
+		},
+		"Rarity": "common"
+	}
+}

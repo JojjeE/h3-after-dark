@@ -1,9 +1,199 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
+	"id": "Jojje.AfterDark",
+	"name": "After Dark",
+	"description": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+	"authors": ["Jojje"],
+	"frameworkVersion": "2.33.21",
 	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"contentFolders": ["1_content"],
+	"options": [
+		{
+			"group": "Replace",
+			"name": "Peacock Addon",
+			"type": "select",
+			"tooltip": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock.",
+			"enabledByDefault": true,
+			"contentFolders": ["2_patches/replace/addon"],
+			"blobsFolders": ["blobs/addon"],
+			"localisedLines": {
+				"001313BF72409058": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC",
+				"002D1714473D6DCE": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME"
+			},
+			"localisation": {
+				"english": {
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "After Dark"
+				},
+				"french": {
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "After Dark"
+				},
+				"italian": {
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "After Dark"
+				},
+				"german": {
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "After Dark"
+				},
+				"spanish": {
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "After Dark"
+				},
+				"russian": {
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "After Dark"
+				}
+			}
+		},
+		{
+			"group": "Replace",
+			"name": "Black & White Tuxedo Set",
+			"type": "select",
+			"contentFolders": ["2_patches/replace/llamaelusive"],
+			"blobsFolders": ["blobs/llamaelusive"],
+			"localisationOverrides": {
+				"004B8C5124A49543": {
+					"english": {
+						"191486215": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1695519493": "After Dark"
+					},
+					"french": {
+						"191486215": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1695519493": "After Dark"
+					},
+					"italian": {
+						"191486215": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1695519493": "After Dark"
+					},
+					"german": {
+						"191486215": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1695519493": "After Dark"
+					},
+					"spanish": {
+						"191486215": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1695519493": "After Dark"
+					},
+					"russian": {
+						"191486215": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1695519493": "After Dark"
+					}
+				}
+			}
+		},
+		{
+			"group": "Replace",
+			"name": "Tuxedo with Gloves",
+			"type": "select",
+			"contentFolders": ["2_patches/replace/pariselusive"],
+			"blobsFolders": ["blobs/pariselusive"],
+			"localisationOverrides": {
+				"00985A1100E5EDDC": {
+					"english": {
+						"1637084416": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1658100719": "After Dark"
+					},
+					"french": {
+						"1637084416": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1658100719": "After Dark"
+					},
+					"italian": {
+						"1637084416": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1658100719": "After Dark"
+					},
+					"german": {
+						"1637084416": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1658100719": "After Dark"
+					},
+					"spanish": {
+						"1637084416": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1658100719": "After Dark"
+					},
+					"russian": {
+						"1637084416": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1658100719": "After Dark"
+					}
+				}
+			}
+		},
+
+		{
+			"group": "Replace",
+			"name": "Classic All-Black Suit",
+			"type": "select",
+			"contentFolders": ["2_patches/replace/allblack"],
+			"blobsFolders": ["blobs/allblack"],
+			"localisationOverrides": {
+				"009F430D046716BE": {
+					"english": {
+						"1081950816": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1386335940": "After Dark"
+					},
+					"french": {
+						"1081950816": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1386335940": "After Dark"
+					},
+					"italian": {
+						"1081950816": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1386335940": "After Dark"
+					},
+					"german": {
+						"1081950816": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1386335940": "After Dark"
+					},
+					"spanish": {
+						"1081950816": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1386335940": "After Dark"
+					},
+					"russian": {
+						"1081950816": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"1386335940": "After Dark"
+					}
+				}
+			}
+		},
+		{
+			"group": "Replace",
+			"name": "Tuxedo, Mask and Gloves",
+			"type": "select",
+			"contentFolders": ["2_patches/replace/sgailelusive"],
+			"blobsFolders": ["blobs/sgailelusive"],
+			"localisationOverrides": {
+				"009F430D046716BE": {
+					"english": {
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"719544698": "After Dark"
+					},
+					"french": {
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"719544698": "After Dark"
+					},
+					"italian": {
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"719544698": "After Dark"
+					},
+					"german": {
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"719544698": "After Dark"
+					},
+					"spanish": {
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"719544698": "After Dark"
+					},
+					"russian": {
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+						"719544698": "After Dark"
+					}
+				}
+			}
+		}
+	],
+	"dependencies": [
+		{
+			"runtimeID": "002162829D6BDBD1",
+			"portFromChunk1": true,
+			"toChunk": 0
+		}
+	]
 }

@@ -1,4 +1,12 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/quickentity-editor-next/main/src/lib/project-schema.json",
-	"customPaths": []
+	"customPaths": [
+		"[assembly:/_pro/characters/assets/agent47/after_dark/geometry/after_dark.wl2?/bowtie_undone.weightedprim](bodypart).pc_weightedprim",
+		"[assembly:/_pro/characters/assets/agent47/after_dark/geometry/after_dark.wl2?/shirt_tuxedo_2btn.weightedprim](bodypart).pc_weightedprim",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/outfit_agent47_global_after_dark_heroa_v0.entitytemplate].pc_entitytemplate",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/outfit_agent47_global_after_dark_heroa_v0.entitytemplate].pc_entityblueprint",
+		"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_after_dark_m_name_d5f19325-01e7-46f2-bf3b-7f4ad7c15b91_01.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_after_dark_m_desc_d5f19325-01e7-46f2-bf3b-7f4ad7c15b91_01.sweetline].pc_sweetline",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_global_after_dark.entitytemplate].pc_entitytype",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_global_after_dark.entitytemplate].pc_entityblueprint"
+	]
 }
