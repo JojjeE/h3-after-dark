@@ -5,7 +5,7 @@
 	"description": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
 	"authors": ["Jojje"],
 	"frameworkVersion": "2.33.21",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"contentFolders": ["1_content"],
 	"options": [
 		{
@@ -117,7 +117,6 @@
 				}
 			}
 		},
-
 		{
 			"group": "Replace",
 			"name": "Classic All-Black Suit",
@@ -162,28 +161,28 @@
 			"localisationOverrides": {
 				"009F430D046716BE": {
 					"english": {
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"719544698": "After Dark"
+						"719544698": "After Dark",
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
 					},
 					"french": {
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"719544698": "After Dark"
+						"719544698": "After Dark",
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
 					},
 					"italian": {
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"719544698": "After Dark"
+						"719544698": "After Dark",
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
 					},
 					"german": {
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"719544698": "After Dark"
+						"719544698": "After Dark",
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
 					},
 					"spanish": {
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"719544698": "After Dark"
+						"719544698": "After Dark",
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
 					},
 					"russian": {
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"719544698": "After Dark"
+						"719544698": "After Dark",
+						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
 					}
 				}
 			}
@@ -195,5 +194,6 @@
 			"portFromChunk1": true,
 			"toChunk": 0
 		}
-	]
+	],
+	"updateCheck": "https://github.com/JojjeE/h3-after-dark/releases/latest/download/updates.json"
 }
