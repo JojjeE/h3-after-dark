@@ -5,7 +5,7 @@
 	"description": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
 	"authors": ["Jojje"],
 	"frameworkVersion": "2.33.21",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"contentFolders": ["1_content"],
 	"options": [
 		{
