@@ -206,6 +206,19 @@
 			"type": "select",
 			"image": "leather_gloves.jpg",
 			"contentFolders": ["2_patches/gloves/leather"]
+		},
+		{
+			"group": "Bowtie",
+			"name": "Undone bowtie",
+			"type": "select",
+			"enabledByDefault": true
+		},
+		{
+			"group": "Bowtie",
+			"name": "No bowtie",
+			"type": "select",
+			"image": "no_bowtie.jpg",
+			"contentFolders": ["2_patches/bowtie/none"]
 		}
 	],
 	"dependencies": [
