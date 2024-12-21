@@ -6,16 +6,20 @@
 	"authors": ["Jojje"],
 	"frameworkVersion": "2.33.21",
 	"version": "1.2.0",
-	"contentFolders": ["1_content"],
 	"options": [
 		{
-			"group": "Replace",
+			"group": "After Dark",
+			"type": "select",
+			"name": "Do not install"
+		},
+		{
+			"group": "After Dark",
 			"name": "Peacock Addon",
 			"type": "select",
 			"tooltip": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock.",
 			"enabledByDefault": true,
-			"contentFolders": ["2_patches/replace/addon"],
-			"blobsFolders": ["blobs/addon"],
+			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/addon"],
+			"blobsFolders": ["blobs/after_dark/addon"],
 			"localisedLines": {
 				"001313BF72409058": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC",
 				"002D1714473D6DCE": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME"
@@ -48,11 +52,11 @@
 			}
 		},
 		{
-			"group": "Replace",
+			"group": "After Dark",
 			"name": "Black & White Tuxedo Set",
 			"type": "select",
-			"contentFolders": ["2_patches/replace/llamaelusive"],
-			"blobsFolders": ["blobs/llamaelusive"],
+			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/llamaelusive"],
+			"blobsFolders": ["blobs/after_dark/llamaelusive"],
 			"localisationOverrides": {
 				"004B8C5124A49543": {
 					"english": {
@@ -83,11 +87,11 @@
 			}
 		},
 		{
-			"group": "Replace",
+			"group": "After Dark",
 			"name": "Tuxedo with Gloves",
 			"type": "select",
-			"contentFolders": ["2_patches/replace/pariselusive"],
-			"blobsFolders": ["blobs/pariselusive"],
+			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/pariselusive"],
+			"blobsFolders": ["blobs/after_dark/pariselusive"],
 			"localisationOverrides": {
 				"00985A1100E5EDDC": {
 					"english": {
@@ -118,11 +122,11 @@
 			}
 		},
 		{
-			"group": "Replace",
+			"group": "After Dark",
 			"name": "Classic All-Black Suit",
 			"type": "select",
-			"contentFolders": ["2_patches/replace/allblack"],
-			"blobsFolders": ["blobs/allblack"],
+			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/allblack"],
+			"blobsFolders": ["blobs/after_dark/allblack"],
 			"localisationOverrides": {
 				"009F430D046716BE": {
 					"english": {
@@ -153,11 +157,11 @@
 			}
 		},
 		{
-			"group": "Replace",
+			"group": "After Dark",
 			"name": "Tuxedo, Mask and Gloves",
 			"type": "select",
-			"contentFolders": ["2_patches/replace/sgailelusive"],
-			"blobsFolders": ["blobs/sgailelusive"],
+			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/sgailelusive"],
+			"blobsFolders": ["blobs/after_dark/sgailelusive"],
 			"localisationOverrides": {
 				"009F430D046716BE": {
 					"english": {
@@ -188,37 +192,241 @@
 			}
 		},
 		{
-			"group": "Gloves",
+			"group": "After Dark - Gloves",
 			"name": "Bare hands",
 			"type": "select",
 			"enabledByDefault": true
 		},
 		{
-			"group": "Gloves",
+			"group": "After Dark - Gloves",
 			"name": "Driving gloves",
 			"type": "select",
 			"image": "driving_gloves.jpg",
-			"contentFolders": ["2_patches/gloves/driving"]
+			"contentFolders": ["2_patches/after_dark/gloves/driving"]
 		},
 		{
-			"group": "Gloves",
+			"group": "After Dark - Gloves",
 			"name": "Leather gloves",
 			"type": "select",
 			"image": "leather_gloves.jpg",
-			"contentFolders": ["2_patches/gloves/leather"]
+			"contentFolders": ["2_patches/after_dark/gloves/leather"]
 		},
 		{
-			"group": "Bowtie",
+			"group": "After Dark - Bowtie",
 			"name": "Undone bowtie",
 			"type": "select",
 			"enabledByDefault": true
 		},
 		{
-			"group": "Bowtie",
+			"group": "After Dark - Bowtie",
 			"name": "No bowtie",
 			"type": "select",
 			"image": "no_bowtie.jpg",
-			"contentFolders": ["2_patches/bowtie/none"]
+			"contentFolders": ["2_patches/after_dark/bowtie/none"]
+		},
+		{
+			"group": "Before Dark",
+			"type": "select",
+			"name": "Do not install"
+		},
+		{
+			"group": "Before Dark",
+			"name": "Peacock Addon",
+			"type": "select",
+			"tooltip": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock.",
+			"enabledByDefault": true,
+			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/addon"],
+			"blobsFolders": ["blobs/before_dark/addon"],
+			"localisedLines": {
+				"001139E12D665035": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC",
+				"0078F28472D3CDF2": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME"
+			},
+			"localisation": {
+				"english": {
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Before Dark"
+				},
+				"french": {
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Début de Soirée"
+				},
+				"italian": {
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Abito Inibito"
+				},
+				"german": {
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Abenddämmerung"
+				},
+				"spanish": {
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Antes de la noche"
+				},
+				"russian": {
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
+					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Сумерки"
+				}
+			}
+		},
+		{
+			"group": "Before Dark",
+			"name": "Black & White Tuxedo Set",
+			"type": "select",
+			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/llamaelusive"],
+			"blobsFolders": ["blobs/before_dark/llamaelusive"],
+			"localisationOverrides": {
+				"004B8C5124A49543": {
+					"english": {
+						"191486215": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
+						"1695519493": "Before Dark"
+					},
+					"french": {
+						"191486215": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
+						"1695519493": "Début de Soirée"
+					},
+					"italian": {
+						"191486215": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
+						"1695519493": "Abito Inibito"
+					},
+					"german": {
+						"191486215": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
+						"1695519493": "Abenddämmerung"
+					},
+					"spanish": {
+						"191486215": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
+						"1695519493": "Antes de la noche"
+					},
+					"russian": {
+						"191486215": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
+						"1695519493": "Сумерки"
+					}
+				}
+			}
+		},
+		{
+			"group": "Before Dark",
+			"name": "Tuxedo with Gloves",
+			"type": "select",
+			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/pariselusive"],
+			"blobsFolders": ["blobs/before_dark/pariselusive"],
+			"localisationOverrides": {
+				"00985A1100E5EDDC": {
+					"english": {
+						"1637084416": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
+						"1658100719": "Before Dark"
+					},
+					"french": {
+						"1637084416": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
+						"1658100719": "Début de Soirée"
+					},
+					"italian": {
+						"1637084416": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
+						"1658100719": "Abito Inibito"
+					},
+					"german": {
+						"1637084416": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
+						"1658100719": "Abenddämmerung"
+					},
+					"spanish": {
+						"1637084416": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
+						"1658100719": "Antes de la noche"
+					},
+					"russian": {
+						"1637084416": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
+						"1658100719": "Сумерки"
+					}
+				}
+			}
+		},
+		{
+			"group": "Before Dark",
+			"name": "Classic All-Black Suit",
+			"type": "select",
+			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/allblack"],
+			"blobsFolders": ["blobs/before_dark/allblack"],
+			"localisationOverrides": {
+				"009F430D046716BE": {
+					"english": {
+						"1081950816": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
+						"1386335940": "Before Dark"
+					},
+					"french": {
+						"1081950816": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
+						"1386335940": "Début de Soirée"
+					},
+					"italian": {
+						"1081950816": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
+						"1386335940": "Abito Inibito"
+					},
+					"german": {
+						"1081950816": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
+						"1386335940": "Abenddämmerung"
+					},
+					"spanish": {
+						"1081950816": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
+						"1386335940": "Antes de la noche"
+					},
+					"russian": {
+						"1081950816": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
+						"1386335940": "Сумерки"
+					}
+				}
+			}
+		},
+		{
+			"group": "Before Dark",
+			"name": "Tuxedo, Mask and Gloves",
+			"type": "select",
+			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/sgailelusive"],
+			"blobsFolders": ["blobs/before_dark/sgailelusive"],
+			"localisationOverrides": {
+				"009F430D046716BE": {
+					"english": {
+						"719544698": "Before Dark",
+						"1519259638": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred."
+					},
+					"french": {
+						"719544698": "Début de Soirée",
+						"1519259638": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère."
+					},
+					"italian": {
+						"719544698": "Abito Inibito",
+						"1519259638": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato."
+					},
+					"german": {
+						"719544698": "Abenddämmerung",
+						"1519259638": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt."
+					},
+					"spanish": {
+						"719544698": "Antes de la noche",
+						"1519259638": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto."
+					},
+					"russian": {
+						"719544698": "Сумерки",
+						"1519259638": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать."
+					}
+				}
+			}
+		},
+		{
+			"group": "Before Dark - Gloves",
+			"name": "Bare hands",
+			"type": "select",
+			"enabledByDefault": true
+		},
+		{
+			"group": "Before Dark - Gloves",
+			"name": "Driving gloves",
+			"type": "select",
+			"image": "driving_gloves.jpg",
+			"contentFolders": ["2_patches/before_dark/gloves/driving"]
+		},
+		{
+			"group": "Before Dark - Gloves",
+			"name": "Leather gloves",
+			"type": "select",
+			"image": "leather_gloves.jpg",
+			"contentFolders": ["2_patches/before_dark/gloves/leather"]
 		}
 	],
 	"dependencies": [

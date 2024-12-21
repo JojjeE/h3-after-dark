@@ -1,0 +1,25 @@
+{
+	"TOKEN_OUTFIT_HERO_BEFORE_DARK": {
+		"Id": "TOKEN_OUTFIT_HERO_BEFORE_DARK",
+		"Guid": "40cc8227-edb5-4b5a-ad77-e94eaaf2f9a9",
+		"Type": "disguise",
+		"Subtype": "formal",
+		"ImageId": "",
+		"RMTPrice": -1,
+		"GamePrice": -1,
+		"IsPurchasable": false,
+		"IsPublished": true,
+		"IsDroppable": false,
+		"Capabilities": [],
+		"Qualities": {},
+		"Properties": {
+			"Quality": 2,
+			"Rarity": "common",
+			"LoadoutSlot": "disguise",
+			"IsConsumable": false,
+			"RepositoryId": "9810663a-faab-4793-b37c-f6c9a99154fe",
+			"OrderIndex": 21
+		},
+		"Rarity": "common"
+	}
+}

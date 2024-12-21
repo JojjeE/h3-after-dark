@@ -1,0 +1,14 @@
+{
+	"9810663a-faab-4793-b37c-f6c9a99154fe": {
+		"ID_": "9810663a-faab-4793-b37c-f6c9a99154fe",
+		"CommonName": "CHAR_Global_Hero_Before_Dark_M",
+		"Description": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC",
+		"HeroDisguiseAvailable": true,
+		"Image": "images/unlockables_override/47_Outfits_before_dark.jpg",
+		"IsHitmanSuit": true,
+		"Name": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME",
+		"Category": "",
+		"ImageTransparent": "",
+		"TokenID": "TOKEN_OUTFIT_HERO_BEFORE_DARK"
+	}
+}

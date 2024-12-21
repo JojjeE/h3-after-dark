@@ -1,0 +1,21 @@
+{
+	"tempHash": "00097AA87B144150",
+	"tbluHash": "00E738E7CF7A35E1",
+	"patch": [
+		{ "SubEntityOperation": ["be7c95052a3f04ea", { "SetFactory": "00D9E4CE77010269" }] },
+		{ "SubEntityOperation": ["be7c95052a3f04ea", { "SetBlueprint": "0074D7B3F5AF412F" }] },
+		{
+			"SubEntityOperation": [
+				"270f6262d79a32de",
+				{ "SetPropertyValue": { "property_name": "m_eSoundFootwearType", "value": "EFWT_LEATHER" } }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"270f6262d79a32de",
+				{ "SetPropertyValue": { "property_name": "m_eOutfitAICategory", "value": "OAC_47STARTOUTFIT" } }
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -7,6 +7,12 @@
 		"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_after_dark_m_name_d5f19325-01e7-46f2-bf3b-7f4ad7c15b91_01.sweetline].pc_sweetline",
 		"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_after_dark_m_desc_d5f19325-01e7-46f2-bf3b-7f4ad7c15b91_01.sweetline].pc_sweetline",
 		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_global_after_dark.entitytemplate].pc_entitytype",
-		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_global_after_dark.entitytemplate].pc_entityblueprint"
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_global_after_dark.entitytemplate].pc_entityblueprint",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_global_before_dark.entitytemplate].pc_entitytype",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/charset_agent47_global_before_dark.entitytemplate].pc_entityblueprint",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/outfit_agent47_global_before_dark_heroa_v0.entitytemplate].pc_entitytemplate",
+		"[assembly:/_pro/characters/templates/hero/agent47/agent47_outfits.template?/outfit_agent47_global_before_dark_heroa_v0.entitytemplate].pc_entityblueprint",
+		"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_before_dark_m_name_9810663a-faab-4793-b37c-f6c9a99154fe_01.sweetline].pc_sweetline",
+		"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_before_dark_m_desc_9810663a-faab-4793-b37c-f6c9a99154fe_01.sweetline].pc_sweetline"
 	]
 }
