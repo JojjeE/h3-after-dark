@@ -4,8 +4,8 @@
 	"name": "After Dark",
 	"description": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
 	"authors": ["Jojje"],
-	"frameworkVersion": "2.33.21",
-	"version": "1.2.0",
+	"frameworkVersion": "2.33.22",
+	"version": "1.3.0",
 	"options": [
 		{
 			"group": "After Dark",
