@@ -6,6 +6,7 @@
 	"authors": ["Jojje"],
 	"frameworkVersion": "2.33.22",
 	"version": "1.3.0",
+	"contentFolders": ["1_content/base"],
 	"options": [
 		{
 			"group": "After Dark",
@@ -225,6 +226,36 @@
 			"contentFolders": ["2_patches/after_dark/bowtie/none"]
 		},
 		{
+			"group": "After Dark - Jacket",
+			"name": "Open",
+			"type": "select",
+			"tooltip": "Open jacket. Default.",
+			"enabledByDefault": true
+		},
+		{
+			"group": "After Dark - Jacket",
+			"name": "Buttoned",
+			"type": "select",
+			"tooltip": "Buttoned jacket.",
+			"image": "buttoned.jpg",
+			"contentFolders": ["1_content/buttoned", "2_patches/after_dark/jacket"]
+		},
+		{
+			"group": "After Dark - Jacket - Color",
+			"name": "Ebony",
+			"type": "select",
+			"tooltip": "Black jacket. Default.",
+			"enabledByDefault": true
+		},
+		{
+			"group": "After Dark - Jacket - Color",
+			"name": "Ivory",
+			"type": "select",
+			"tooltip": "Cream jacket.",
+			"image": "ivory.jpg",
+			"contentFolders": ["2_patches/after_dark/ivory"]
+		},
+		{
 			"group": "Before Dark",
 			"type": "select",
 			"name": "Do not install"
@@ -427,6 +458,36 @@
 			"type": "select",
 			"image": "leather_gloves.jpg",
 			"contentFolders": ["2_patches/before_dark/gloves/leather"]
+		},
+		{
+			"group": "Before Dark - Jacket",
+			"name": "Open",
+			"type": "select",
+			"tooltip": "Open jacket. Default.",
+			"enabledByDefault": true
+		},
+		{
+			"group": "Before Dark - Jacket",
+			"name": "Buttoned",
+			"type": "select",
+			"tooltip": "Buttoned jacket.",
+			"image": "buttoned.jpg",
+			"contentFolders": ["1_content/buttoned", "2_patches/before_dark/jacket"]
+		},
+		{
+			"group": "Before Dark - Jacket - Color",
+			"name": "Ebony",
+			"type": "select",
+			"tooltip": "Black jacket. Default.",
+			"enabledByDefault": true
+		},
+		{
+			"group": "Before Dark - Jacket - Color",
+			"name": "Ivory",
+			"type": "select",
+			"tooltip": "Cream jacket.",
+			"image": "ivory.jpg",
+			"contentFolders": ["2_patches/before_dark/ivory"]
 		}
 	],
 	"dependencies": [
