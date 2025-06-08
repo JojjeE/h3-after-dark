@@ -66,47 +66,6 @@
 				}
 			}
 		},
-		"156e3c356c80fef5": {
-			"parent": "b87420d64a3e5950",
-			"name": "jacket_tuxedo",
-			"factory": "[assembly:/_pro/characters/assets/individuals/llama/donyates/materials/jacket_tuxedo.mi].pc_entitytype",
-			"blueprint": "[assembly:/_pro/characters/assets/individuals/llama/donyates/materials/jacket_tuxedo.mi].pc_entityblueprint",
-			"properties": {
-				"m_mTransform": {
-					"type": "SMatrix43",
-					"value": {
-						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
-						"position": { "x": 0.0, "y": 0.0, "z": 0.0 }
-					}
-				},
-				"ConstantColorRGB_01_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantColorRGB_01_Value": {
-					"type": "SColorRGB",
-					"value": "#363126"
-				},
-				"ConstantVector1D_01_Value_op": {
-					"type": "IRenderMaterialEntity.EModifierOperation",
-					"value": "eReplace"
-				},
-				"ConstantVector1D_01_Value": {
-					"type": "float32",
-					"value": -4.230000019073486
-				},
-				"Clients": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["b87420d64a3e5950", "5b6989e52a010ddb"],
-					"postInit": true
-				},
-				"m_eidParent": {
-					"type": "SEntityTemplateReference",
-					"value": "b87420d64a3e5950",
-					"postInit": true
-				}
-			}
-		},
 		"cc531f55702e2065": {
 			"parent": "9b639b2d8ae82e4d",
 			"name": "C_TighTop_R",
@@ -911,17 +870,6 @@
 				"m_eidParent": {
 					"type": "SEntityTemplateReference",
 					"value": "5b6989e52a010ddb"
-				}
-			},
-			"inputCopying": {
-				"ConstantVector1D_04_Value": {
-					"ConstantVector1D_04_Value": ["156e3c356c80fef5"]
-				},
-				"ConstantVector1D_06_Value": {
-					"ConstantVector1D_06_Value": ["156e3c356c80fef5"]
-				},
-				"ConstantVector1D_01_Value": {
-					"ConstantVector1D_01_Value": ["156e3c356c80fef5"]
 				}
 			},
 			"exposedInterfaces": {

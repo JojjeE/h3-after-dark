@@ -1,0 +1,209 @@
+{
+	"$schema": "https://glaciermodding.org/schemas/material.schema.json",
+	"MATI": "00AC685DB1FEF0C4",
+	"MATT": "[unknown:/*/jacket_tuxedo.mi].pc_entitytype",
+	"MATB": "[unknown:/*/jacket_tuxedo.mi].pc_entityblueprint",
+	"MATE": "[[assembly:/_pro/characters/materialclasses/basic_anisotropic.materialclass].fx](dx11).pc_mate",
+	"ERES": "[assembly:/_pro/effects/templates/materialdescriptors/fx_md_char_cloth.template?/fx_md_char_cloth.entitytemplate].pc_entityresource",
+	"TYPE": "Standard",
+	"Material": {
+		"Instance": [
+			{
+				"Name": "jacket_tuxedo.mi",
+				"Tags": "",
+				"Binder": [
+					{
+						"Render State": [
+							{
+								"Name": "RenderState",
+								"Enabled": 1,
+								"Blend Enabled": 0,
+								"Decal Blend Diffuse": 0,
+								"Decal Blend Normal": 0,
+								"Decal Blend Specular": 0,
+								"Decal Blend Roughness": 0,
+								"Decal Blend Emission": 0,
+								"Alpha Test Enabled": 0,
+								"Alpha Reference": 255,
+								"Fog Enabled": 1,
+								"Culling Mode": "DontCare",
+								"Z Bias": 0,
+								"Z Offset": 0,
+								"Subsurface Red": 2,
+								"Subsurface Green": 1.399999976158142,
+								"Subsurface Blue": 1.100000023841858,
+								"Subsurface Value": 0.8199999928474426
+							}
+						],
+						"Float Value": [
+							{
+								"Name": "gm_mTransform2D_01",
+								"Enabled": 1,
+								"Value": [1, 0, 0, 0, 0, 1, 0, 0]
+							},
+							{
+								"Name": "ConstantVector1D_06_Value",
+								"Enabled": 1,
+								"Value": 1
+							},
+							{
+								"Name": "ConstantVector1D_10_Value",
+								"Enabled": 1,
+								"Value": -1
+							},
+							{
+								"Name": "ConstantVector1D_04_Value",
+								"Enabled": 1,
+								"Value": 0
+							},
+							{
+								"Name": "ConstantVector1D_05_Value",
+								"Enabled": 1,
+								"Value": 1
+							},
+							{
+								"Name": "ConstantVector1D_09_Value",
+								"Enabled": 1,
+								"Value": 1
+							},
+							{
+								"Name": "ConstantVector1D_03_Value",
+								"Enabled": 1,
+								"Value": 1
+							},
+							{
+								"Name": "ConstantVector1D_01_Value",
+								"Enabled": 1,
+								"Value": 0.5
+							},
+							{
+								"Name": "ConstantVector1D_07_Value",
+								"Enabled": 1,
+								"Value": 0.15000000596046448
+							},
+							{
+								"Name": "ConstantVector1D_08_Value",
+								"Enabled": 1,
+								"Value": -0.20000000298023224
+							}
+						],
+						"Texture": [
+							{
+								"Name": "mapTexture2DNormal_01",
+								"Enabled": 1,
+								"Texture Id": "[assembly:/_pro/characters/assets/individuals/llama/donyates/textures/jacket_tuxedo.texture?/normal_a.tex](asnormalmap).pc_tex",
+								"Tiling U": "",
+								"Tiling V": "",
+								"Type": "AsNormalMap"
+							},
+							{
+								"Name": "mapTexture2D_03",
+								"Enabled": 1,
+								"Texture Id": "00DBCAA1F81AAD0A",
+								"Tiling U": "",
+								"Tiling V": "",
+								"Type": "AsColorMap"
+							},
+							{
+								"Name": "mapTexture2D_01",
+								"Enabled": 1,
+								"Texture Id": "0083701AB11C18B3",
+								"Tiling U": "",
+								"Tiling V": "",
+								"Type": "AsColorMap"
+							},
+							{
+								"Name": "mapTexture2DCompoundNormal_01",
+								"Enabled": 1,
+								"Texture Id": "[assembly:/_pro/environment/textures/constants/directional_a.texture?/normal_b.tex](ascompoundnormal).pc_tex",
+								"Tiling U": "",
+								"Tiling V": "",
+								"Type": "AsCompoundNormal"
+							}
+						],
+						"Color": [
+							{
+								"Name": "ConstantColorRGB_05_Value",
+								"Enabled": 1,
+								"Value": [0.9019608497619629, 0.9058824181556702, 1]
+							},
+							{
+								"Name": "ConstantColorRGB_02_Value",
+								"Enabled": 1,
+								"Value": [0.2980392277240753, 0.2980392277240753, 0.2980392277240753]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"Overrides": {
+		"Texture": {
+			"Texture2DNormal_01": "[assembly:/_pro/characters/assets/individuals/llama/donyates/textures/jacket_tuxedo.texture?/normal_a.tex](asnormalmap).pc_tex",
+			"Texture2D_03": "00DBCAA1F81AAD0A",
+			"Texture2D_01": "0083701AB11C18B3",
+			"Texture2DCompoundNormal_01": "[assembly:/_pro/environment/textures/constants/directional_a.texture?/normal_b.tex](ascompoundnormal).pc_tex"
+		},
+		"Color": {
+			"ConstantColorRGB_05_Value": [0.9019608497619629, 0.9058824181556702, 1],
+			"ConstantColorRGB_02_Value": [0.2980392277240753, 0.2980392277240753, 0.2980392277240753]
+		},
+		"ConstantVector1D_06_Value": 1,
+		"ConstantVector1D_10_Value": -1,
+		"ConstantVector1D_04_Value": 0,
+		"ConstantVector1D_05_Value": 1,
+		"ConstantVector1D_09_Value": 1,
+		"ConstantVector1D_03_Value": 1,
+		"ConstantVector1D_01_Value": 0.5,
+		"ConstantVector1D_07_Value": 0.15000000596046448,
+		"ConstantVector1D_08_Value": -0.20000000298023224
+	},
+	"Flags": {
+		"Class": {
+			"REFLECTION2D": false,
+			"REFRACTION2D": false,
+			"LIGHTING": true,
+			"EMISSIVE": false,
+			"DISCARD": false,
+			"LM_SKIN": false,
+			"PRIMCLASS_STANDARD": true,
+			"PRIMCLASS_LINKED": false,
+			"PRIMCLASS_WEIGHTED": false,
+			"DOFOVERRIDE": false,
+			"USES_DEFAULT_VS": true,
+			"USES_SPRITE_SA_VS": false,
+			"USES_SPRITE_AO_VS": false,
+			"ALPHA": false,
+			"USES_SIMPLE_SHADER": true,
+			"DISABLE_INSTANCING": false,
+			"LM_HAIR": true,
+			"SAMPLE_LIGHTING": false,
+			"HORIZONMAPPING": false,
+			"UNKNOWN_3": false,
+			"UNKNOWN_4": false,
+			"UNKNOWN_5": false
+		},
+		"Instance": {
+			"OPAQUE_EMISSIVE": false,
+			"TRANS_EMISSIVE": false,
+			"TRANSADD_EMISSIVE": false,
+			"TRANSALL": false,
+			"OPAQUE_LIT": true,
+			"TRANS_LIT": false,
+			"DECAL": false,
+			"REFRACTIVE": false,
+			"LM_SKIN": false,
+			"LM_HAIR": false,
+			"FORCE_EMISSIVE": false,
+			"DISABLE_SHADER_LOD": true,
+			"DISCARD": false,
+			"DECAL_EMISSIVE": false,
+			"DECAL_ALL": false,
+			"WATER_CLIPPING": false,
+			"SAMPLE_LIGHTING": false,
+			"EXCLUDE_GLOBAL_SHADOWS": false,
+			"ALL": false
+		}
+	}
+}
