@@ -1,0 +1,21 @@
+{
+	"id": "[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext].pc_localized-textlist",
+	"lines": {
+		"CHAR_LLAMA_REWARD_HERO_STARTINGOUTFIT_M_PRO189720_DESC_D5F19325-01E7-46F2-BF3B-7F4AD7C15B91_01": {
+			"english": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
+			"french": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
+			"german": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
+			"italian": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
+			"russian": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
+			"spanish": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto."
+		},
+		"CHAR_LLAMA_REWARD_HERO_STARTINGOUTFIT_M_PRO189720_NAME_D5F19325-01E7-46F2-BF3B-7F4AD7C15B91_01": {
+			"english": "Before Dark",
+			"french": "Début de Soirée",
+			"german": "Abenddämmerung",
+			"italian": "Abito Inibito",
+			"russian": "Сумерки",
+			"spanish": "Antes de la noche"
+		}
+	}
+}

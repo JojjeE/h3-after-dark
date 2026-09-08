@@ -1,0 +1,40 @@
+{
+	"factory": "[unknown:/*/jacket_tuxedo.mi].pc_entitytype",
+	"blueprint": "[unknown:/*/jacket_tuxedo.mi].pc_entityblueprint",
+	"material": "[assembly:/_pro/characters/assets/individuals/llama/tylerblack_m/materials/jacket_tuxedo.mi].pc_mi",
+	"overrides": {
+		"Texture2DNormal_01": {
+			"type": "texture",
+			"value": "[assembly:/_pro/characters/assets/individuals/llama/donyates/textures/jacket_tuxedo.texture?/normal_a.tex](asnormalmap).pc_tex"
+		},
+		"Texture2D_03": {
+			"type": "texture",
+			"value": "[assembly:/_pro/characters/assets/individuals/llama/tylerblack_m/textures/jacket_tuxedo.texture?/specular_a.tex](ascolormap).pc_tex"
+		},
+		"Texture2D_01": {
+			"type": "texture",
+			"value": "[assembly:/_pro/characters/assets/individuals/llama/tylerblack_m/textures/jacket_tuxedo.texture?/diffuse_a.tex](ascolormap).pc_tex"
+		},
+		"Texture2DCompoundNormal_01": {
+			"type": "texture",
+			"value": "[assembly:/_pro/environment/textures/constants/directional_a.texture?/normal_b.tex](ascompoundnormal).pc_tex"
+		},
+		"ConstantColorRGB_05_Value": {
+			"type": "color",
+			"value": "e6e7ff"
+		},
+		"ConstantColorRGB_02_Value": {
+			"type": "color",
+			"value": "4c4c4c"
+		},
+		"ConstantVector1D_06_Value": { "type": "float", "value": 1.0 },
+		"ConstantVector1D_10_Value": { "type": "float", "value": -1.0 },
+		"ConstantVector1D_04_Value": { "type": "float", "value": 0.0 },
+		"ConstantVector1D_05_Value": { "type": "float", "value": 1.0 },
+		"ConstantVector1D_09_Value": { "type": "float", "value": 1.0 },
+		"ConstantVector1D_03_Value": { "type": "float", "value": 1.0 },
+		"ConstantVector1D_01_Value": { "type": "float", "value": 0.5 },
+		"ConstantVector1D_07_Value": { "type": "float", "value": 0.15 },
+		"ConstantVector1D_08_Value": { "type": "float", "value": -0.2 }
+	}
+}

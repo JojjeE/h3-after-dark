@@ -1,501 +1,475 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
+	"$schema": "../../manifest-schema.json",
 	"id": "Jojje.AfterDark",
 	"name": "After Dark",
 	"description": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
 	"authors": ["Jojje"],
-	"frameworkVersion": "2.33.37",
 	"version": "1.4.1",
-	"contentFolders": ["1_content/base"],
+	"frameworkVersion": "3.0.0",
+	"url": "https://github.com/JojjeE/h3-after-dark",
+	"conditions": { "supportedGames": ["h3"] },
+	"data": { "contentFolders": ["1_content/base"] },
 	"options": [
 		{
-			"group": "After Dark",
-			"type": "select",
-			"name": "Do not install"
-		},
-		{
-			"group": "After Dark",
-			"name": "Peacock Addon",
-			"type": "select",
-			"tooltip": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock.",
-			"enabledByDefault": true,
-			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/addon"],
-			"blobsFolders": ["blobs/after_dark/addon"],
-			"localisedLines": {
-				"001313BF72409058": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC",
-				"002D1714473D6DCE": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME"
-			},
-			"localisation": {
-				"english": {
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "After Dark"
+			"id": "afterdark-install",
+			"type": "selection",
+			"name": "After Dark",
+			"defaultValue": "afterdark-peacock",
+			"options": [
+				{
+					"id": "afterdark-dni",
+					"name": "Do not install"
 				},
-				"french": {
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère.",
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "Fin de Soirée"
+				{
+					"id": "afterdark-peacock",
+					"name": "Peacock Addon",
+					"description": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock, or offline.",
+					"data": {
+						"contentFolders": [
+							"2_patches/after_dark/replace/addon",
+							"1_content/after_dark"
+						],
+						"blobFolders": ["blobs/after_dark/addon"],
+						"localisation": {
+							"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": {
+								"english": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+								"french": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère.",
+								"italian": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato.",
+								"german": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt.",
+								"spanish": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto.",
+								"russian": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать."
+							},
+							"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": {
+								"english": "After Dark",
+								"french": "Fin de Soirée",
+								"italian": "Abito Disinibito",
+								"german": "Einbruch der Dunkelheit",
+								"spanish": "Cierrabares",
+								"russian": "Послемрак"
+							}
+						},
+						"localisedLines": {
+							"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_after_dark_m_desc_d5f19325-01e7-46f2-bf3b-7f4ad7c15b91_01.sweetline].pc_sweetline": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC",
+							"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_after_dark_m_name_d5f19325-01e7-46f2-bf3b-7f4ad7c15b91_01.sweetline].pc_sweetline": "UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME"
+						}
+					}
 				},
-				"italian": {
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato.",
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "Abito Disinibito"
+				{
+					"id": "afterdark-bw-tuxedo",
+					"name": "Black & White Tuxedo Set",
+					"data": {
+						"contentFolders": [
+							"2_patches/after_dark/replace/llamaelusive",
+							"1_content/after_dark"
+						],
+						"blobFolders": ["blobs/after_dark/llamaelusive"]
+					},
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-bw-tuxedo\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
+					}
 				},
-				"german": {
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt.",
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "Einbruch der Dunkelheit"
+				{
+					"id": "afterdark-tuxedo",
+					"name": "Tuxedo with Gloves",
+					"data": {
+						"contentFolders": [
+							"2_patches/after_dark/replace/pariselusive",
+							"1_content/after_dark"
+						],
+						"blobFolders": ["blobs/after_dark/pariselusive"]
+					},
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-tuxedo\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
+					}
 				},
-				"spanish": {
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto.",
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "Cierrabares"
+				{
+					"id": "afterdark-allblack",
+					"name": "Classic All-Black Suit",
+					"data": {
+						"contentFolders": [
+							"2_patches/after_dark/replace/allblack",
+							"1_content/after_dark"
+						],
+						"blobFolders": ["blobs/after_dark/allblack"]
+					},
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-allblack\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
+					}
 				},
-				"russian": {
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_DESC": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать.",
-					"UI_TOKEN_OUTFIT_HERO_AFTER_DARK_NAME": "Послемрак"
-				}
-			}
-		},
-		{
-			"group": "After Dark",
-			"name": "Black & White Tuxedo Set",
-			"type": "select",
-			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/llamaelusive"],
-			"blobsFolders": ["blobs/after_dark/llamaelusive"],
-			"localisationOverrides": {
-				"004B8C5124A49543": {
-					"english": {
-						"191486215": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"1695519493": "After Dark"
+				{
+					"id": "afterdark-masktuxedo",
+					"name": "Tuxedo, Mask and Gloves",
+					"data": {
+						"contentFolders": [
+							"2_patches/after_dark/replace/sgailelusive",
+							"1_content/after_dark"
+						],
+						"blobFolders": ["blobs/after_dark/sgailelusive"]
 					},
-					"french": {
-						"191486215": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère.",
-						"1695519493": "Fin de Soirée"
-					},
-					"italian": {
-						"191486215": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato.",
-						"1695519493": "Abito Disinibito"
-					},
-					"german": {
-						"191486215": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt.",
-						"1695519493": "Einbruch der Dunkelheit"
-					},
-					"spanish": {
-						"191486215": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto.",
-						"1695519493": "Cierrabares"
-					},
-					"russian": {
-						"191486215": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать.",
-						"1695519493": "Послемрак"
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-masktuxedo\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
 					}
 				}
-			}
+			]
 		},
 		{
-			"group": "After Dark",
-			"name": "Tuxedo with Gloves",
-			"type": "select",
-			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/pariselusive"],
-			"blobsFolders": ["blobs/after_dark/pariselusive"],
-			"localisationOverrides": {
-				"00985A1100E5EDDC": {
-					"english": {
-						"1637084416": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"1658100719": "After Dark"
-					},
-					"french": {
-						"1637084416": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère.",
-						"1658100719": "Fin de Soirée"
-					},
-					"italian": {
-						"1637084416": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato.",
-						"1658100719": "Abito Disinibito"
-					},
-					"german": {
-						"1637084416": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt.",
-						"1658100719": "Einbruch der Dunkelheit"
-					},
-					"spanish": {
-						"1637084416": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto.",
-						"1658100719": "Cierrabares"
-					},
-					"russian": {
-						"1637084416": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать.",
-						"1658100719": "Послемрак"
-					}
-				}
-			}
-		},
-		{
-			"group": "After Dark",
-			"name": "Classic All-Black Suit",
-			"type": "select",
-			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/allblack"],
-			"blobsFolders": ["blobs/after_dark/allblack"],
-			"localisationOverrides": {
-				"009F430D046716BE": {
-					"english": {
-						"1081950816": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
-						"1386335940": "After Dark"
-					},
-					"french": {
-						"1081950816": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère.",
-						"1386335940": "Fin de Soirée"
-					},
-					"italian": {
-						"1081950816": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato.",
-						"1386335940": "Abito Disinibito"
-					},
-					"german": {
-						"1081950816": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt.",
-						"1386335940": "Einbruch der Dunkelheit"
-					},
-					"spanish": {
-						"1081950816": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto.",
-						"1386335940": "Cierrabares"
-					},
-					"russian": {
-						"1081950816": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать.",
-						"1386335940": "Послемрак"
-					}
-				}
-			}
-		},
-		{
-			"group": "After Dark",
-			"name": "Tuxedo, Mask and Gloves",
-			"type": "select",
-			"contentFolders": ["1_content/after_dark", "2_patches/after_dark/replace/sgailelusive"],
-			"blobsFolders": ["blobs/after_dark/sgailelusive"],
-			"localisationOverrides": {
-				"009F430D046716BE": {
-					"english": {
-						"719544698": "After Dark",
-						"1519259638": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred."
-					},
-					"french": {
-						"719544698": "Fin de Soirée",
-						"1519259638": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère."
-					},
-					"italian": {
-						"719544698": "Abito Disinibito",
-						"1519259638": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato."
-					},
-					"german": {
-						"719544698": "Einbruch der Dunkelheit",
-						"1519259638": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt."
-					},
-					"spanish": {
-						"719544698": "Cierrabares",
-						"1519259638": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto."
-					},
-					"russian": {
-						"719544698": "Послемрак",
-						"1519259638": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать."
-					}
-				}
-			}
-		},
-		{
-			"group": "After Dark - Gloves",
-			"name": "Bare hands",
-			"type": "select",
-			"enabledByDefault": true
-		},
-		{
-			"group": "After Dark - Gloves",
-			"name": "Driving gloves",
-			"type": "select",
-			"image": "driving_gloves.jpg",
-			"contentFolders": ["2_patches/after_dark/gloves/driving"]
-		},
-		{
-			"group": "After Dark - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"image": "leather_gloves.jpg",
-			"contentFolders": ["2_patches/after_dark/gloves/leather"]
-		},
-		{
-			"group": "After Dark - Bowtie",
-			"name": "Undone bowtie",
-			"type": "select",
-			"enabledByDefault": true
-		},
-		{
-			"group": "After Dark - Bowtie",
-			"name": "No bowtie",
-			"type": "select",
-			"image": "no_bowtie.jpg",
-			"contentFolders": ["2_patches/after_dark/bowtie/none"]
-		},
-		{
-			"group": "After Dark - Jacket",
-			"name": "Open",
-			"type": "select",
-			"tooltip": "Open jacket. Default.",
-			"enabledByDefault": true
-		},
-		{
-			"group": "After Dark - Jacket",
-			"name": "Buttoned",
-			"type": "select",
-			"tooltip": "Buttoned jacket.",
-			"image": "buttoned.jpg",
-			"contentFolders": ["1_content/buttoned", "2_patches/after_dark/jacket"]
-		},
-		{
-			"group": "After Dark - Jacket - Color",
-			"name": "Ebony",
-			"type": "select",
-			"tooltip": "Black jacket. Default.",
-			"enabledByDefault": true
-		},
-		{
-			"group": "After Dark - Jacket - Color",
-			"name": "Ivory",
-			"type": "select",
-			"tooltip": "Cream jacket.",
-			"image": "ivory.jpg",
-			"contentFolders": ["2_patches/after_dark/ivory"]
-		},
-		{
-			"group": "Before Dark",
-			"type": "select",
-			"name": "Do not install"
-		},
-		{
-			"group": "Before Dark",
-			"name": "Peacock Addon",
-			"type": "select",
-			"tooltip": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock.",
-			"enabledByDefault": true,
-			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/addon"],
-			"blobsFolders": ["blobs/before_dark/addon"],
-			"localisedLines": {
-				"001139E12D665035": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC",
-				"0078F28472D3CDF2": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME"
-			},
-			"localisation": {
-				"english": {
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Before Dark"
+			"id": "beforedark-install",
+			"type": "selection",
+			"name": "Before Dark",
+			"defaultValue": "beforedark-peacock",
+			"options": [
+				{
+					"id": "beforedark-dni",
+					"name": "Do not install"
 				},
-				"french": {
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Début de Soirée"
+				{
+					"id": "beforedark-peacock",
+					"name": "Peacock Addon",
+					"description": "Install the suit to your game as an addon without replacing existing suits. This will only work if you're playing with Peacock, or offline.",
+					"data": {
+						"contentFolders": [
+							"2_patches/before_dark/replace/addon",
+							"1_content/before_dark"
+						],
+						"blobFolders": ["blobs/before_dark/addon"],
+						"localisation": {
+							"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": {
+								"english": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
+								"french": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
+								"italian": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
+								"german": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
+								"spanish": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
+								"russian": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать."
+							},
+							"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": {
+								"english": "Before Dark",
+								"french": "Début de Soirée",
+								"italian": "Abito Inibito",
+								"german": "Abenddämmerung",
+								"spanish": "Antes de la noche",
+								"russian": "Сумерки"
+							}
+						},
+						"localisedLines": {
+							"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_before_dark_m_desc_9810663a-faab-4793-b37c-f6c9a99154fe_01.sweetline].pc_sweetline": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC",
+							"[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext?/char_global_hero_before_dark_m_name_9810663a-faab-4793-b37c-f6c9a99154fe_01.sweetline].pc_sweetline": "UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME"
+						}
+					}
 				},
-				"italian": {
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Abito Inibito"
+				{
+					"id": "beforedark-bw-tuxedo",
+					"name": "Black & White Tuxedo Set",
+					"data": {
+						"contentFolders": [
+							"2_patches/before_dark/replace/llamaelusive",
+							"1_content/before_dark"
+						],
+						"blobFolders": ["blobs/before_dark/llamaelusive"]
+					},
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-bw-tuxedo\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
+					}
 				},
-				"german": {
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Abenddämmerung"
+				{
+					"id": "beforedark-tuxedo",
+					"name": "Tuxedo with Gloves",
+					"data": {
+						"contentFolders": [
+							"2_patches/before_dark/replace/pariselusive",
+							"1_content/before_dark"
+						],
+						"blobFolders": ["blobs/before_dark/pariselusive"]
+					},
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-tuxedo\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
+					}
 				},
-				"spanish": {
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Antes de la noche"
+				{
+					"id": "beforedark-allblack",
+					"name": "Classic All-Black Suit",
+					"data": {
+						"contentFolders": [
+							"2_patches/before_dark/replace/allblack",
+							"1_content/before_dark"
+						],
+						"blobFolders": ["blobs/before_dark/allblack"]
+					},
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-allblack\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
+					}
 				},
-				"russian": {
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_DESC": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
-					"UI_TOKEN_OUTFIT_HERO_BEFORE_DARK_NAME": "Сумерки"
-				}
-			}
-		},
-		{
-			"group": "Before Dark",
-			"name": "Black & White Tuxedo Set",
-			"type": "select",
-			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/llamaelusive"],
-			"blobsFolders": ["blobs/before_dark/llamaelusive"],
-			"localisationOverrides": {
-				"004B8C5124A49543": {
-					"english": {
-						"191486215": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
-						"1695519493": "Before Dark"
+				{
+					"id": "beforedark-masktuxedo",
+					"name": "Tuxedo, Mask and Gloves",
+					"data": {
+						"contentFolders": [
+							"2_patches/before_dark/replace/sgailelusive",
+							"1_content/before_dark"
+						],
+						"blobFolders": ["blobs/before_dark/sgailelusive"]
 					},
-					"french": {
-						"191486215": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
-						"1695519493": "Début de Soirée"
-					},
-					"italian": {
-						"191486215": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
-						"1695519493": "Abito Inibito"
-					},
-					"german": {
-						"191486215": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
-						"1695519493": "Abenddämmerung"
-					},
-					"spanish": {
-						"191486215": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
-						"1695519493": "Antes de la noche"
-					},
-					"russian": {
-						"191486215": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
-						"1695519493": "Сумерки"
+					"conditions": {
+						"incompatibleConditions": [
+							{
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-masktuxedo\")",
+								"explanation": {
+									"english": "After Dark and Before Dark cannot replace the same suit."
+								}
+							}
+						]
 					}
 				}
-			}
+			]
 		},
 		{
-			"group": "Before Dark",
-			"name": "Tuxedo with Gloves",
-			"type": "select",
-			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/pariselusive"],
-			"blobsFolders": ["blobs/before_dark/pariselusive"],
-			"localisationOverrides": {
-				"00985A1100E5EDDC": {
-					"english": {
-						"1637084416": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
-						"1658100719": "Before Dark"
-					},
-					"french": {
-						"1637084416": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
-						"1658100719": "Début de Soirée"
-					},
-					"italian": {
-						"1637084416": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
-						"1658100719": "Abito Inibito"
-					},
-					"german": {
-						"1637084416": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
-						"1658100719": "Abenddämmerung"
-					},
-					"spanish": {
-						"1637084416": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
-						"1658100719": "Antes de la noche"
-					},
-					"russian": {
-						"1637084416": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
-						"1658100719": "Сумерки"
-					}
+			"id": "afterdark-variants",
+			"type": "optionGroup",
+			"name": "After Dark",
+			"displayCondition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-dni\")",
+			"options": [
+				{
+					"id": "afterdark-variant-gloves",
+					"type": "selection",
+					"name": "Gloves",
+					"defaultValue": "afterdark-variant-gloves-none",
+					"options": [
+						{
+							"id": "afterdark-variant-gloves-none",
+							"name": "Bare hands"
+						},
+						{
+							"id": "afterdark-variant-gloves-driving",
+							"name": "Driving gloves",
+							"image": "driving_gloves.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/after_dark/gloves/driving"
+								]
+							}
+						},
+						{
+							"id": "afterdark-variant-gloves-leather",
+							"name": "Leather gloves",
+							"image": "leather_gloves.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/after_dark/gloves/leather"
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": "afterdark-variant-bowtie",
+					"type": "selection",
+					"name": "Bowtie",
+					"defaultValue": "afterdark-variant-bowtie-undone",
+					"options": [
+						{
+							"id": "afterdark-variant-bowtie-undone",
+							"name": "Undone bowtie"
+						},
+						{
+							"id": "afterdark-variant-bowtie-none",
+							"name": "No bowtie",
+							"image": "no_bowtie.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/after_dark/bowtie/none"
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": "afterdark-variant-jacket",
+					"type": "selection",
+					"name": "Jacket",
+					"defaultValue": "afterdark-variant-jacket-open",
+					"options": [
+						{
+							"id": "afterdark-variant-jacket-open",
+							"name": "Open",
+							"description": "Open jacket. Default."
+						},
+						{
+							"id": "afterdark-variant-jacket-buttoned",
+							"name": "Buttoned",
+							"description": "Buttoned jacket.",
+							"image": "buttoned.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/after_dark/jacket",
+									"1_content/buttoned"
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": "afterdark-variant-jacket-color",
+					"type": "selection",
+					"name": "Color",
+					"defaultValue": "afterdark-variant-jacket-color-ebony",
+					"options": [
+						{
+							"id": "afterdark-variant-jacket-color-ebony",
+							"name": "Ebony",
+							"description": "Black jacket. Default."
+						},
+						{
+							"id": "afterdark-variant-jacket-color-ivory",
+							"name": "Ivory",
+							"description": "Cream jacket.",
+							"image": "ivory.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/after_dark/ivory"
+								]
+							}
+						}
+					]
 				}
-			}
+
+			]
 		},
 		{
-			"group": "Before Dark",
-			"name": "Classic All-Black Suit",
-			"type": "select",
-			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/allblack"],
-			"blobsFolders": ["blobs/before_dark/allblack"],
-			"localisationOverrides": {
-				"009F430D046716BE": {
-					"english": {
-						"1081950816": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred.",
-						"1386335940": "Before Dark"
-					},
-					"french": {
-						"1081950816": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère.",
-						"1386335940": "Début de Soirée"
-					},
-					"italian": {
-						"1081950816": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato.",
-						"1386335940": "Abito Inibito"
-					},
-					"german": {
-						"1081950816": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt.",
-						"1386335940": "Abenddämmerung"
-					},
-					"spanish": {
-						"1081950816": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto.",
-						"1386335940": "Antes de la noche"
-					},
-					"russian": {
-						"1081950816": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать.",
-						"1386335940": "Сумерки"
-					}
+			"id": "beforedark-variants",
+			"type": "optionGroup",
+			"name": "Before Dark",
+			"displayCondition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-dni\")",
+			"options": [
+				{
+					"id": "beforedark-variant-gloves",
+					"type": "selection",
+					"name": "Gloves",
+					"defaultValue": "beforedark-variant-gloves-none",
+					"options": [
+						{
+							"id": "beforedark-variant-gloves-none",
+							"name": "Bare hands"
+						},
+						{
+							"id": "beforedark-variant-gloves-driving",
+							"name": "Driving gloves",
+							"image": "driving_gloves.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/before_dark/gloves/driving"
+								]
+							}
+						},
+						{
+							"id": "beforedark-variant-gloves-leather",
+							"name": "Leather gloves",
+							"image": "leather_gloves.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/before_dark/gloves/leather"
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": "beforedark-variant-jacket",
+					"type": "selection",
+					"name": "Jacket",
+					"defaultValue": "beforedark-variant-jacket-open",
+					"options": [
+						{
+							"id": "beforedark-variant-jacket-open",
+							"name": "Open",
+							"description": "Open jacket. Default."
+						},
+						{
+							"id": "beforedark-variant-jacket-buttoned",
+							"name": "Buttoned",
+							"description": "Buttoned jacket.",
+							"image": "buttoned.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/before_dark/jacket",
+									"1_content/buttoned"
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": "beforedark-variant-jacket-color",
+					"type": "selection",
+					"name": "Color",
+					"defaultValue": "beforedark-variant-jacket-color-ebony",
+					"options": [
+						{
+							"id": "beforedark-variant-jacket-color-ebony",
+							"name": "Ebony",
+							"description": "Black jacket. Default."
+						},
+						{
+							"id": "beforedark-variant-jacket-color-ivory",
+							"name": "Ivory",
+							"description": "Cream jacket.",
+							"image": "ivory.jpg",
+							"data": {
+								"contentFolders": [
+									"2_patches/before_dark/ivory"
+								]
+							}
+						}
+					]
 				}
-			}
-		},
-		{
-			"group": "Before Dark",
-			"name": "Tuxedo, Mask and Gloves",
-			"type": "select",
-			"contentFolders": ["1_content/before_dark", "2_patches/before_dark/replace/sgailelusive"],
-			"blobsFolders": ["blobs/before_dark/sgailelusive"],
-			"localisationOverrides": {
-				"009F430D046716BE": {
-					"english": {
-						"719544698": "Before Dark",
-						"1519259638": "When you're ready to hit the casino, after a stiff martini. Shaken, not stirred."
-					},
-					"french": {
-						"719544698": "Début de Soirée",
-						"1519259638": "Lorsque vous êtes prêt à vous rendre au casino, après un martini bien serré. Au shaker, pas à la cuillère."
-					},
-					"italian": {
-						"719544698": "Abito Inibito",
-						"1519259638": "Quando si è pronti per andare al casinò, dopo aver bevuto un martini. Agitato, non mescolato."
-					},
-					"german": {
-						"719544698": "Abenddämmerung",
-						"1519259638": "Wenn Sie nach einem starken Martini ins Casino gehen wollen. Geschüttelt, nicht gerührt."
-					},
-					"spanish": {
-						"719544698": "Antes de la noche",
-						"1519259638": "Cuando estés listo para ir al casino, después de un buen martini. Agitado, no revuelto."
-					},
-					"russian": {
-						"719544698": "Сумерки",
-						"1519259638": "Когда вы готовы отправиться в казино, после крепкого мартини. Взболтать, но не перемешивать."
-					}
-				}
-			}
-		},
-		{
-			"group": "Before Dark - Gloves",
-			"name": "Bare hands",
-			"type": "select",
-			"enabledByDefault": true
-		},
-		{
-			"group": "Before Dark - Gloves",
-			"name": "Driving gloves",
-			"type": "select",
-			"image": "driving_gloves.jpg",
-			"contentFolders": ["2_patches/before_dark/gloves/driving"]
-		},
-		{
-			"group": "Before Dark - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"image": "leather_gloves.jpg",
-			"contentFolders": ["2_patches/before_dark/gloves/leather"]
-		},
-		{
-			"group": "Before Dark - Jacket",
-			"name": "Open",
-			"type": "select",
-			"tooltip": "Open jacket. Default.",
-			"enabledByDefault": true
-		},
-		{
-			"group": "Before Dark - Jacket",
-			"name": "Buttoned",
-			"type": "select",
-			"tooltip": "Buttoned jacket.",
-			"image": "buttoned.jpg",
-			"contentFolders": ["1_content/buttoned", "2_patches/before_dark/jacket"]
-		},
-		{
-			"group": "Before Dark - Jacket - Color",
-			"name": "Ebony",
-			"type": "select",
-			"tooltip": "Black jacket. Default.",
-			"enabledByDefault": true
-		},
-		{
-			"group": "Before Dark - Jacket - Color",
-			"name": "Ivory",
-			"type": "select",
-			"tooltip": "Cream jacket.",
-			"image": "ivory.jpg",
-			"contentFolders": ["2_patches/before_dark/ivory"]
+			]
 		}
-	],
-	"dependencies": [
-		{
-			"runtimeID": "002162829D6BDBD1",
-			"portFromChunk1": true,
-			"toChunk": 0
-		}
-	],
-	"updateCheck": "https://github.com/JojjeE/h3-after-dark/releases/latest/download/updates.json"
+	]
 }

@@ -1,0 +1,21 @@
+{
+	"id": "[assembly:/localization/hitman6/conversations/ui/pro/online/repository/outfits_hero_s3.sweetmenutext].pc_localized-textlist",
+	"lines": {
+		"CHAR_LLAMA_REWARD_HERO_STARTINGOUTFIT_M_PRO189720_DESC_D5F19325-01E7-46F2-BF3B-7F4AD7C15B91_01": {
+			"english": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
+			"french": "À quoi vous pourriez ressembler lorsque vous rentrez chez vous après une nuit au casino et que vous avez juste besoin d'un verre avant d'aller vous coucher. Au shaker, pas à la cuillère.",
+			"german": "So könnten Sie aussehen, wenn Sie nach einer Nacht im Kasino nach Hause kommen und nur noch einen Drink vor dem Schlafengehen brauchen. Geschüttelt, nicht gerührt.",
+			"italian": "Come potreste apparire quando tornate a casa dopo una serata al casinò e avete bisogno di un drink prima di andare a letto. Agitato, non mescolato.",
+			"russian": "Как вы можете выглядеть, когда возвращаетесь домой после ночи в казино, и вам просто необходимо выпить перед сном. Взболтать, но не перемешивать.",
+			"spanish": "El aspecto que podrías tener cuando vuelves a casa después de una noche en el casino y necesitas una copa antes de acostarte. Agitado, no revuelto."
+		},
+		"CHAR_LLAMA_REWARD_HERO_STARTINGOUTFIT_M_PRO189720_NAME_D5F19325-01E7-46F2-BF3B-7F4AD7C15B91_01": {
+			"english": "After Dark",
+			"french": "Fin de Soirée",
+			"german": "Einbruch der Dunkelheit",
+			"italian": "Abito Disinibito",
+			"russian": "Послемрак",
+			"spanish": "Cierrabares"
+		}
+	}
+}
