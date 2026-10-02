@@ -55,7 +55,7 @@
 					}
 				},
 				{
-					"id": "afterdark-bw-tuxedo",
+					"id": "afterdark-llamaelusive",
 					"name": "Black & White Tuxedo Set",
 					"data": {
 						"contentFolders": [
@@ -67,16 +67,16 @@
 					"conditions": {
 						"incompatibleConditions": [
 							{
-								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-bw-tuxedo\")",
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-llamaelusive\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
 					}
 				},
 				{
-					"id": "afterdark-tuxedo",
+					"id": "afterdark-pariselusive",
 					"name": "Tuxedo with Gloves",
 					"data": {
 						"contentFolders": [
@@ -88,9 +88,9 @@
 					"conditions": {
 						"incompatibleConditions": [
 							{
-								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-tuxedo\")",
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-pariselusive\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
@@ -111,14 +111,14 @@
 							{
 								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-allblack\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
 					}
 				},
 				{
-					"id": "afterdark-masktuxedo",
+					"id": "afterdark-sgailelusive",
 					"name": "Tuxedo, Mask and Gloves",
 					"data": {
 						"contentFolders": [
@@ -130,9 +130,9 @@
 					"conditions": {
 						"incompatibleConditions": [
 							{
-								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-masktuxedo\")",
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"beforedark-install\") != Some(\"beforedark-sgailelusive\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
@@ -185,7 +185,7 @@
 					}
 				},
 				{
-					"id": "beforedark-bw-tuxedo",
+					"id": "beforedark-llamaelusive",
 					"name": "Black & White Tuxedo Set",
 					"data": {
 						"contentFolders": [
@@ -197,16 +197,16 @@
 					"conditions": {
 						"incompatibleConditions": [
 							{
-								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-bw-tuxedo\")",
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-llamaelusive\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
 					}
 				},
 				{
-					"id": "beforedark-tuxedo",
+					"id": "beforedark-pariselusive",
 					"name": "Tuxedo with Gloves",
 					"data": {
 						"contentFolders": [
@@ -218,9 +218,9 @@
 					"conditions": {
 						"incompatibleConditions": [
 							{
-								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-tuxedo\")",
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-pariselusive\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
@@ -241,14 +241,14 @@
 							{
 								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-allblack\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
 					}
 				},
 				{
-					"id": "beforedark-masktuxedo",
+					"id": "beforedark-sgailelusive",
 					"name": "Tuxedo, Mask and Gloves",
 					"data": {
 						"contentFolders": [
@@ -260,9 +260,9 @@
 					"conditions": {
 						"incompatibleConditions": [
 							{
-								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-masktuxedo\")",
+								"condition": "mod_option(\"Jojje.AfterDark@1.4.1\", \"afterdark-install\") != Some(\"afterdark-sgailelusive\")",
 								"explanation": {
-									"english": "After Dark and Before Dark cannot replace the same suit."
+									"english": "This suit replacement is already selected in another option."
 								}
 							}
 						]
