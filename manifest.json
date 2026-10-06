@@ -5,7 +5,7 @@
 	"description": "How you might look when coming home after a night at the casino, and you just need a drink before bed. Shaken, not stirred.",
 	"authors": ["Jojje"],
 	"version": "1.4.1",
-	"frameworkVersion": "3.0.0",
+	"frameworkVersion": "3.0.0-rc.4",
 	"url": "https://github.com/JojjeE/h3-after-dark",
 	"conditions": { "supportedGames": ["h3"] },
 	"data": { "contentFolders": ["1_content/base"] },
